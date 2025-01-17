@@ -2,6 +2,7 @@
 title: '2-6) 토픽과 파티션'
 date: 2024-12-07 15:10:00
 category: 'kafka'
+tags: ['kafka']
 draft: false
 ---
 

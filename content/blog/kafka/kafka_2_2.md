@@ -2,6 +2,7 @@
 title: '2-2) Kafka 클러스터와 브로커, 주키퍼'
 date: 2024-12-07 14:30:00
 category: 'kafka'
+tags: ['kafka']
 draft: false
 ---
 

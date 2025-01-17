@@ -2,6 +2,7 @@
 title: '[Flutter] 06. Provider에서 자주 마주치게 되는 에러들'
 date: 2024-01-21 16:00:00
 category: 'flutter'
+tags: ['flutter']
 draft: false
 ---
 

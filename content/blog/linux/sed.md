@@ -2,6 +2,7 @@
 title: '[Linux] sed 명령어'
 date: 2022-08-28 14:00:00
 category: 'linux'
+tags: ['linux']
 draft: false
 ---
 

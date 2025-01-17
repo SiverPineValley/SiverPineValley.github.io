@@ -2,6 +2,7 @@
 title: '3-2) Saas형 Apache Kafka 소개'
 date: 2024-12-07 16:10:00
 category: 'kafka'
+tags: ['kafka']
 draft: false
 ---
 

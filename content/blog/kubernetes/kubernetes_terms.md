@@ -2,6 +2,7 @@
 title: '쿠버네티스 용어 정리'
 date: 2022-07-31 13:20:22
 category: 'kubernetes'
+tags: ['kubernetes']
 draft: false
 ---
 

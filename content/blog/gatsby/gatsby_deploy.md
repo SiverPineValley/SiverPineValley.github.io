@@ -2,6 +2,7 @@
 title: '[Gatsby Blog 만들기 - 2] Gastby Blog 배포 (gatsby-starter-bee)'
 date: 2021-09-25 23:26:20
 category: 'gatsby'
+tags: ['gatsby']
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 title: '6-4) 버로우'
 date: 2024-01-11 18:00:00
 category: 'kafka'
+tags: ['kafka']
 draft: false
 ---
 

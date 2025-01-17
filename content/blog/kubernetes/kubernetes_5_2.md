@@ -2,6 +2,7 @@
 title: '[쿠버네티스 완벽 가이드] 08. 워크로드 API 카테고리 (2) - 레플리카셋/레플리케이션 컨트롤러'
 date: 2022-08-21 16:30:00
 category: 'kubernetes'
+tags: ['kubernetes']
 draft: false
 ---
 

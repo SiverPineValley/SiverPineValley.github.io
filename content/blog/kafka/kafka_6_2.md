@@ -2,6 +2,7 @@
 title: '6-2) 컨슈머 애플리케이션 개발'
 date: 2024-01-11 17:00:00
 category: 'kafka'
+tags: ['kafka']
 draft: false
 ---
 

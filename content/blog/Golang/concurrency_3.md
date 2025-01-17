@@ -2,6 +2,7 @@
 title: '[Go 언어 문법 정리] 04. 병행 처리 (3) 병행 처리 활용'
 date: 2022-04-16 21:55:23
 category: 'Golang'
+tags: ['golang']
 draft: false
 ---
 

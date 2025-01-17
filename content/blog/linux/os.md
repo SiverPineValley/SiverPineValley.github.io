@@ -2,6 +2,7 @@
 title: '[Linux] OS 확인 하는 법'
 date: 2022-08-13 16:00:00
 category: 'linux'
+tags: ['linux']
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 title: '[Flutter] 07. ChangeNotifier를 이용한 action 처리'
 date: 2024-01-21 18:00:00
 category: 'flutter'
+tags: ['flutter']
 draft: false
 ---
 

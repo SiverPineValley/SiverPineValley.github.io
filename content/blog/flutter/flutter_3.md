@@ -2,6 +2,7 @@
 title: '[Flutter] 03. Consumer, ProviderNotFoundException, Selector'
 date: 2024-01-08 23:40:00
 category: 'flutter'
+tags: ['flutter']
 draft: false
 ---
 

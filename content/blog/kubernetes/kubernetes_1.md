@@ -2,6 +2,7 @@
 title: '[쿠버네티스 완벽 가이드] 01. 도커'
 date: 2022-07-18 17:00:00
 category: 'kubernetes'
+tags: ['kubernetes']
 draft: false
 ---
 

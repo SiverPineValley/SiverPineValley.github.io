@@ -2,6 +2,7 @@
 title: '2-5) ISR (In-Sync-Replicas)'
 date: 2024-12-07 15:00:00
 category: 'kafka'
+tags: ['kafka']
 draft: false
 ---
 

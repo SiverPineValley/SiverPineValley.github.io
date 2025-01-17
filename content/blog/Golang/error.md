@@ -2,6 +2,7 @@
 title: '[Go 언어 문법 정리] 05. 에러 처리'
 date: 2022-05-29 17:03:25
 category: 'Golang'
+tags: ['golang']
 draft: false
 ---
 

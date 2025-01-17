@@ -2,6 +2,7 @@
 title: '[쿠버네티스 완벽 가이드] 17. 컨피그 & 스토리지 API 카테고리 (3) - 영구 볼륨(PV), 영구 볼륨 클레임(PVC), Storage Class'
 date: 2024-02-05 18:10:00
 category: 'kubernetes'
+tags: ['kubernetes']
 draft: false
 ---
 

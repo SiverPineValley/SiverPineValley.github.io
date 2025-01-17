@@ -2,6 +2,7 @@
 title: '4-1) 카프카 CLI 툴 소개'
 date: 2024-12-23 22:45:00
 category: 'kafka'
+tags: ['kafka']
 draft: false
 ---
 

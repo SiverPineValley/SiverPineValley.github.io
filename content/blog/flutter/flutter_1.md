@@ -2,6 +2,7 @@
 title: '[Flutter] 01. 왜 Flutter인가?'
 date: 2024-01-06 17:00:00
 category: 'flutter'
+tags: ['flutter']
 draft: false
 ---
 

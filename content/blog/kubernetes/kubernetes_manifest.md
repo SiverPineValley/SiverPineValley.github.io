@@ -2,6 +2,7 @@
 title: '쿠버네티스의 매니페스트 파일'
 date: 2022-07-31 13:13:34
 category: 'kubernetes'
+tags: ['kubernetes']
 draft: false
 ---
 

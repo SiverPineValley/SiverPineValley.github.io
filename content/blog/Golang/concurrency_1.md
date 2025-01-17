@@ -2,6 +2,7 @@
 title: '[Go 언어 문법 정리] 04. 병행 처리 (1) 고루틴과 채널'
 date: 2022-04-02 15:50:20
 category: 'Golang'
+tags: ['golang']
 draft: false
 ---
 

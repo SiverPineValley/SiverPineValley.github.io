@@ -2,6 +2,7 @@
 title: '5-1) 프로듀서'
 date: 2024-01-06 21:00:00
 category: 'kafka'
+tags: ['kafka']
 draft: false
 ---
 

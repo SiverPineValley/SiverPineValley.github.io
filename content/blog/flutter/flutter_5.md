@@ -2,6 +2,7 @@
 title: '[Flutter] 05. Proxy Provider'
 date: 2024-01-14 23:00:00
 category: 'flutter'
+tags: ['flutter']
 draft: false
 ---
 

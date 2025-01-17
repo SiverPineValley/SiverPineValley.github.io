@@ -1,7 +1,8 @@
 ---
-title: '로드밸런서의 개념과 종류'
+title: '[Server] 로드밸런서의 개념과 종류'
 date: 2022-09-09 15:00:00
-category: 'server'
+category: 'Server'
+tags: ['server']
 draft: false
 ---
 

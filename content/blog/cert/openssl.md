@@ -2,6 +2,7 @@
 title: '[Cert] openssl을 사용한 인증서 파일 생성'
 date: 2022-07-30 15:00:00
 category: 'cert'
+tags: ["cert"]
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 title: '2-4) 복제 (replication)'
 date: 2024-12-07 14:50:00
 category: 'kafka'
+tags: ['kafka']
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 title: '[쿠버네티스 완벽 가이드] 03. 쿠버네티스 환경'
 date: 2022-07-23 21:20:12
 category: 'kubernetes'
+tags: ['kubernetes']
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 title: '2-3) 로그와 세그먼트'
 date: 2024-12-07 14:40:00
 category: 'kafka'
+tags: ['kafka']
 draft: false
 ---
 

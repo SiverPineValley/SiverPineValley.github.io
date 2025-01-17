@@ -2,6 +2,7 @@
 title: '[Go 언어 문법 정리] 01. 기초 문법'
 date: 2022-03-01 21:02:17
 category: 'Golang'
+tags: ['golang']
 draft: false
 ---
 

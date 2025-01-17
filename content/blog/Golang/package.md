@@ -2,6 +2,7 @@
 title: '[Go 언어 문법 정리] 06. 패키지'
 date: 2022-06-11 14:18:32
 category: 'Golang'
+tags: ['golang']
 draft: false
 ---
 

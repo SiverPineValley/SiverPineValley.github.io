@@ -2,6 +2,7 @@
 title: 'CKA, CKAD 합격 후기'
 date: 2024-11-16 18:00:00
 category: 'kubernetes'
+tags: ['kubernetes']
 draft: false
 ---
 
