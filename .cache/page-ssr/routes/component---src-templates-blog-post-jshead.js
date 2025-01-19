@@ -820,6 +820,58 @@ Z.displayName = "StaticImage", Z.propTypes = Q;
 
 /***/ }),
 
+/***/ "./src/components/Utterances.js":
+/*!**************************************!*\
+  !*** ./src/components/Utterances.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+class Utterances extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
+  constructor(props) {
+    super(props);
+    this.commentsEl = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createRef();
+    this.state = {
+      status: 'pending'
+    };
+  }
+  componentDidMount() {
+    const scriptEl = document.createElement('script');
+    scriptEl.onload = () => this.setState({
+      status: 'success'
+    });
+    scriptEl.onerror = () => this.setState({
+      status: 'failed'
+    });
+    scriptEl.async = true;
+    scriptEl.src = 'https://utteranc.es/client.js';
+    scriptEl.setAttribute('repo', 'SiverPineValley/SiverPineValley.github.io');
+    scriptEl.setAttribute('issue-term', 'title');
+    scriptEl.setAttribute('theme', 'github-light');
+    scriptEl.setAttribute('crossorigin', 'anonymous');
+    this.commentsEl.current.appendChild(scriptEl);
+  }
+  render() {
+    const {
+      status
+    } = this.state;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "comments-wrapper"
+    }, status === 'failed' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Error. Please try again."), status === 'pending' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Loading script..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      ref: this.commentsEl
+    }));
+  }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Utterances);
+
+/***/ }),
+
 /***/ "./src/components/bio.js":
 /*!*******************************!*\
   !*** ./src/components/bio.js ***!
@@ -830,7 +882,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_3257411868_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3257411868.json */ "./public/page-data/sq/d/3257411868.json");
+/* harmony import */ var _public_page_data_sq_d_230163734_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/230163734.json */ "./public/page-data/sq/d/230163734.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
@@ -845,12 +897,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Bio = () => {
-  var _data$site$siteMetada, _data$site$siteMetada2;
-  const data = _public_page_data_sq_d_3257411868_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  var _data$site$siteMetada;
+  const data = _public_page_data_sq_d_230163734_json__WEBPACK_IMPORTED_MODULE_0__.data;
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = (_data$site$siteMetada = data.site.siteMetadata) === null || _data$site$siteMetada === void 0 ? void 0 : _data$site$siteMetada.author;
-  const social = (_data$site$siteMetada2 = data.site.siteMetadata) === null || _data$site$siteMetada2 === void 0 ? void 0 : _data$site$siteMetada2.social;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "bio"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
@@ -927,7 +978,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_2841359383_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/2841359383.json */ "./public/page-data/sq/d/2841359383.json");
+/* harmony import */ var _public_page_data_sq_d_3589320610_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3589320610.json */ "./public/page-data/sq/d/3589320610.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
@@ -947,7 +998,7 @@ const Seo = ({
   var _site$siteMetadata, _site$siteMetadata2, _site$siteMetadata2$s;
   const {
     site
-  } = _public_page_data_sq_d_2841359383_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  } = _public_page_data_sq_d_3589320610_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = (_site$siteMetadata = site.siteMetadata) === null || _site$siteMetadata === void 0 ? void 0 : _site$siteMetadata.title;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("title", null, defaultTitle ? `${title} | ${defaultTitle}` : title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("meta", {
@@ -963,16 +1014,16 @@ const Seo = ({
     property: "og:type",
     content: "website"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("meta", {
-    name: "twitter:card",
+    name: "github:card",
     content: "summary"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("meta", {
-    name: "twitter:creator",
-    content: ((_site$siteMetadata2 = site.siteMetadata) === null || _site$siteMetadata2 === void 0 ? void 0 : (_site$siteMetadata2$s = _site$siteMetadata2.social) === null || _site$siteMetadata2$s === void 0 ? void 0 : _site$siteMetadata2$s.twitter) || ``
+    name: "github:creator",
+    content: ((_site$siteMetadata2 = site.siteMetadata) === null || _site$siteMetadata2 === void 0 ? void 0 : (_site$siteMetadata2$s = _site$siteMetadata2.social) === null || _site$siteMetadata2$s === void 0 ? void 0 : _site$siteMetadata2$s.github) || ``
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("meta", {
-    name: "twitter:title",
+    name: "github:title",
     content: title
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("meta", {
-    name: "twitter:description",
+    name: "github:description",
     content: metaDescription
   }), children);
 };
@@ -997,6 +1048,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_bio__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/bio */ "./src/components/bio.js");
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
 /* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
+/* harmony import */ var _components_Utterances__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Utterances */ "./src/components/Utterances.js");
+
 
 
 
@@ -1043,7 +1096,7 @@ const BlogPostTemplate = ({
   }, "\u2190 ", previous.frontmatter.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, next && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: next.fields.slug,
     rel: "next"
-  }, next.frontmatter.title, " \u2192")))));
+  }, next.frontmatter.title, " \u2192"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Utterances__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
 };
 const Head = ({
   data: {
@@ -1070,23 +1123,23 @@ module.exports = JSON.parse('{"layout":"fixed","backgroundColor":"#88a858","imag
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/2841359383.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/2841359383.json ***!
-  \***********************************************/
+/***/ "./public/page-data/sq/d/230163734.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/230163734.json ***!
+  \**********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Devlog","description":"A starter blog demonstrating what Gatsby can do.","social":{"twitter":"kylemathews"}}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":{"name":"Jongin Park","summary":"개발 블로그 (SiverPineValley)"},"social":{"github":"https://github.com/SiverPineValley/SiverPineValley.github.io"}}}}}');
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/3257411868.json":
+/***/ "./public/page-data/sq/d/3589320610.json":
 /*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3257411868.json ***!
+  !*** ./public/page-data/sq/d/3589320610.json ***!
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":{"name":"Jongin Park","summary":"개발 블로그 (SiverPineValley)"},"social":{"twitter":"kylemathews"}}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Devlog","description":"A starter blog demonstrating what Gatsby can do.","social":{"github":"https://github.com/SiverPineValley/SiverPineValley.github.io"}}}}}');
 
 /***/ })
 

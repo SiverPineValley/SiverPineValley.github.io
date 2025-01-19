@@ -14,6 +14,9 @@ module.exports = {
       name: `Jongin Park`,
       summary: `개발 블로그 (SiverPineValley)`,
     },
+    social: {
+      github: "https://github.com/SiverPineValley/SiverPineValley.github.io"
+    },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://github.com/SiverPineValley/SiverPineValley.github.io`,
   },

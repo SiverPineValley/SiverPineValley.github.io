@@ -830,7 +830,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_3257411868_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3257411868.json */ "./public/page-data/sq/d/3257411868.json");
+/* harmony import */ var _public_page_data_sq_d_230163734_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/230163734.json */ "./public/page-data/sq/d/230163734.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
@@ -845,12 +845,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Bio = () => {
-  var _data$site$siteMetada, _data$site$siteMetada2;
-  const data = _public_page_data_sq_d_3257411868_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  var _data$site$siteMetada;
+  const data = _public_page_data_sq_d_230163734_json__WEBPACK_IMPORTED_MODULE_0__.data;
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = (_data$site$siteMetada = data.site.siteMetadata) === null || _data$site$siteMetada === void 0 ? void 0 : _data$site$siteMetada.author;
-  const social = (_data$site$siteMetada2 = data.site.siteMetadata) === null || _data$site$siteMetada2 === void 0 ? void 0 : _data$site$siteMetada2.social;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "bio"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
@@ -927,7 +926,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_2841359383_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/2841359383.json */ "./public/page-data/sq/d/2841359383.json");
+/* harmony import */ var _public_page_data_sq_d_3589320610_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3589320610.json */ "./public/page-data/sq/d/3589320610.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
@@ -947,7 +946,7 @@ const Seo = ({
   var _site$siteMetadata, _site$siteMetadata2, _site$siteMetadata2$s;
   const {
     site
-  } = _public_page_data_sq_d_2841359383_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  } = _public_page_data_sq_d_3589320610_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = (_site$siteMetadata = site.siteMetadata) === null || _site$siteMetadata === void 0 ? void 0 : _site$siteMetadata.title;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("title", null, defaultTitle ? `${title} | ${defaultTitle}` : title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("meta", {
@@ -963,16 +962,16 @@ const Seo = ({
     property: "og:type",
     content: "website"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("meta", {
-    name: "twitter:card",
+    name: "github:card",
     content: "summary"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("meta", {
-    name: "twitter:creator",
-    content: ((_site$siteMetadata2 = site.siteMetadata) === null || _site$siteMetadata2 === void 0 ? void 0 : (_site$siteMetadata2$s = _site$siteMetadata2.social) === null || _site$siteMetadata2$s === void 0 ? void 0 : _site$siteMetadata2$s.twitter) || ``
+    name: "github:creator",
+    content: ((_site$siteMetadata2 = site.siteMetadata) === null || _site$siteMetadata2 === void 0 ? void 0 : (_site$siteMetadata2$s = _site$siteMetadata2.social) === null || _site$siteMetadata2$s === void 0 ? void 0 : _site$siteMetadata2$s.github) || ``
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("meta", {
-    name: "twitter:title",
+    name: "github:title",
     content: title
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("meta", {
-    name: "twitter:description",
+    name: "github:description",
     content: metaDescription
   }), children);
 };
@@ -1067,23 +1066,23 @@ module.exports = JSON.parse('{"layout":"fixed","backgroundColor":"#88a858","imag
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/2841359383.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/2841359383.json ***!
-  \***********************************************/
+/***/ "./public/page-data/sq/d/230163734.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/230163734.json ***!
+  \**********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Devlog","description":"A starter blog demonstrating what Gatsby can do.","social":{"twitter":"kylemathews"}}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":{"name":"Jongin Park","summary":"개발 블로그 (SiverPineValley)"},"social":{"github":"https://github.com/SiverPineValley/SiverPineValley.github.io"}}}}}');
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/3257411868.json":
+/***/ "./public/page-data/sq/d/3589320610.json":
 /*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3257411868.json ***!
+  !*** ./public/page-data/sq/d/3589320610.json ***!
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":{"name":"Jongin Park","summary":"개발 블로그 (SiverPineValley)"},"social":{"twitter":"kylemathews"}}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Devlog","description":"A starter blog demonstrating what Gatsby can do.","social":{"github":"https://github.com/SiverPineValley/SiverPineValley.github.io"}}}}}');
 
 /***/ })
 

@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-index-js": preferDefault(require("/Users/parkjongin/workspace/nodejs/SiverPineValley.github.io/src/pages/index.js")),
   "component---src-pages-tags-js": preferDefault(require("/Users/parkjongin/workspace/nodejs/SiverPineValley.github.io/src/pages/tags.js")),
   "component---src-pages-using-typescript-tsx": preferDefault(require("/Users/parkjongin/workspace/nodejs/SiverPineValley.github.io/src/pages/using-typescript.tsx")),
-  "component---src-templates-blog-post-js": preferDefault(require("/Users/parkjongin/workspace/nodejs/SiverPineValley.github.io/src/templates/blog-post.js"))
+  "component---src-templates-blog-post-js": preferDefault(require("/Users/parkjongin/workspace/nodejs/SiverPineValley.github.io/src/templates/blog-post.js")),
+  "component---src-templates-tags-js": preferDefault(require("/Users/parkjongin/workspace/nodejs/SiverPineValley.github.io/src/templates/tags.js"))
 }
 

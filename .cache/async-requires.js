@@ -4,7 +4,8 @@ exports.components = {
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js?export=default" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-tags-js": () => import("./../../../src/pages/tags.js?export=default" /* webpackChunkName: "component---src-pages-tags-js" */),
   "component---src-pages-using-typescript-tsx": () => import("./../../../src/pages/using-typescript.tsx?export=default" /* webpackChunkName: "component---src-pages-using-typescript-tsx" */),
-  "component---src-templates-blog-post-js": () => import("./../../../src/templates/blog-post.js?export=default" /* webpackChunkName: "component---src-templates-blog-post-js" */)
+  "component---src-templates-blog-post-js": () => import("./../../../src/templates/blog-post.js?export=default" /* webpackChunkName: "component---src-templates-blog-post-js" */),
+  "component---src-templates-tags-js": () => import("./../../../src/templates/tags.js?export=default" /* webpackChunkName: "component---src-templates-tags-js" */)
 }
 
 

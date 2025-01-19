@@ -9,7 +9,7 @@ var plugins = [{
     },{
       name: 'gatsby-plugin-manifest',
       plugin: require('/Users/parkjongin/workspace/nodejs/SiverPineValley.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
-      options: {"plugins":[],"name":"Gatsby Starter Blog","short_name":"Gatsby","start_url":"/","background_color":"#ffffff","display":"minimal-ui","icon":"src/images/gatsby-icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"4a9773549091c227cd2eb82ccd9c5e3a"},
+      options: {"plugins":[],"name":"Gatsby Starter Blog","short_name":"Gatsby","start_url":"/","background_color":"#ffffff","display":"minimal-ui","icon":"src/images/jjong2.jpeg","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"5e48a86c48a0b5281725f2ec66c2e829"},
     },{
       name: 'default-site-plugin',
       plugin: require('/Users/parkjongin/workspace/nodejs/SiverPineValley.github.io/gatsby-ssr.js'),

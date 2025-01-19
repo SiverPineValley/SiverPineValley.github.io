@@ -4,12 +4,14 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
  */
 
-const path = require(`path`)
+const path = require("path")
+const _ = require("lodash")
+
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 // Define the template for blog post
-const blogPost = path.resolve(`./src/templates/blog-post.js`)
-const tagTemplate = path.resolve("src/templates/tags.js")
+const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
+const tagTemplate = path.resolve("./src/templates/tags.js")
 
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
@@ -26,6 +28,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       ) {
         edges {
           node {
+            id
             fields {
               slug
             }
@@ -40,7 +43,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           fieldValue
         }
       }
-    }   
+    }
   `)
 
   if (result.errors) {
@@ -57,13 +60,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // `context` is available in the template as a prop and as a variable in GraphQL
 
   if (posts.length > 0) {
-    posts.forEach((post, index) => {
+    posts.forEach((edge, index) => {
+      let post = edge.node;
       const previousPostId = index === 0 ? null : posts[index - 1].id
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
       createPage({
         path: post.fields.slug,
-        component: blogPost,
+        component: blogPostTemplate,
         context: {
           id: post.id,
           previousPostId,
@@ -73,10 +77,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }
 
-  const tags = result.data.tagsGroup.group
+  const tags = result.data.tagsGroup.group;
 
   // Make tag pages
-  if (tags.length() > 0) {
+  if (tags.length > 0) {
     tags.forEach(tag => {
       createPage({
         path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
@@ -131,7 +135,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Social {
-      twitter: String
+      github: String
     }
 
     type MarkdownRemark implements Node {
