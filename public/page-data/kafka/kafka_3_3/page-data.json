@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-templates-blog-post-js","path":"/kafka/kafka_3_3/","result":{"errors":[{"message":"Variable \"$id\" got invalid value undefined; Expected non-nullable type \"String!\" not to be null.","locations":[{"line":1,"column":22}]}],"pageContext":{}},"staticQueryHashes":["230163734","3589320610"],"slicesMap":{}}
