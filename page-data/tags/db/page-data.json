@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/db/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/db/acid/"},"frontmatter":{"title":"[Database] ACID 원칙"}}}]}},"pageContext":{"tag":"db"}},"staticQueryHashes":[],"slicesMap":{}}
