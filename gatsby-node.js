@@ -11,6 +11,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 // Define the template for blog post
 const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
+const blotListTemplate = path.resolve(`./src/templates/blog-list-template.js`);
 const tagTemplate = path.resolve("./src/templates/tags.js")
 
 /**
@@ -60,6 +61,35 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // `context` is available in the template as a prop and as a variable in GraphQL
 
   if (posts.length > 0) {
+    // Create blog-list pages
+    const postsPerPage = 10
+    const numPages = Math.ceil(posts.length / postsPerPage)
+    Array.from({ length: numPages }).forEach((_, i) => {
+      let path = `/blog/${i + 1}`
+      if (i === 0) {
+        createPage({
+          path: `/blog`,
+          component: blotListTemplate,
+          context: {
+            limit: postsPerPage,
+            skip: i * postsPerPage,
+            numPages,
+            currentPage: i + 1,
+          },
+        });
+      }
+      createPage({
+        path: path,
+        component: blotListTemplate,
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+        },
+      });
+    });
+
     posts.forEach((edge, index) => {
       let post = edge.node;
       const previousPostId = index === 0 ? null : posts[index - 1].id
@@ -98,10 +128,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
  */
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
-
     createNodeField({
       name: `slug`,
       node,
