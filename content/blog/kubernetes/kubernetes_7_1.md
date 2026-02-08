@@ -2,7 +2,6 @@
 title: '[쿠버네티스 완벽 가이드] 15. 컨피그 & 스토리지 API 카테고리 (1) - 환경변수, 시크릿, 컨피그맵'
 date: 2022-10-16 20:00:00
 category: 'kubernetes'
-tags: ['kubernetes']
 draft: false
 ---
 

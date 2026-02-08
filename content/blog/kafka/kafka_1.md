@@ -2,7 +2,6 @@
 title: '1) Apache Kafka의 특징과 미래'
 date: 2024-12-07 13:00:00
 category: 'kafka'
-tags: ['kafka']
 draft: false
 ---
 

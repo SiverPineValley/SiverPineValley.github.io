@@ -2,7 +2,6 @@
 title: '6-1) 컨슈머'
 date: 2024-01-11 16:00:00
 category: 'kafka'
-tags: ['kafka']
 draft: false
 ---
 

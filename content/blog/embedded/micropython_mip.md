@@ -2,7 +2,6 @@
 title: '[MicroPython] mip를 통한 MicroPython 라이브러리 받기'
 date: 2023-08-14 17:00:00
 category: 'embedded'
-tags: ["embedded"]
 draft: false
 ---
 

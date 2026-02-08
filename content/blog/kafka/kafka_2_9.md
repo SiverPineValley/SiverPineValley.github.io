@@ -2,7 +2,6 @@
 title: '2-9) 클라이언트 메타데이터와 브로커 통신'
 date: 2024-12-07 15:30:00
 category: 'kafka'
-tags: ['kafka']
 draft: false
 ---
 

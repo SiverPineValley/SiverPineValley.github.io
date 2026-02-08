@@ -2,7 +2,6 @@
 title: '4-2) 토픽을 생성하는 두 가지 방법'
 date: 2024-12-23 23:00:00
 category: 'kafka'
-tags: ['kafka']
 draft: false
 ---
 

@@ -2,7 +2,6 @@
 title: '[MicroPython] RaspberryPi Pico에서 MicroPython 사용하기'
 date: 2023-08-14 17:30:00
 category: 'embedded'
-tags: ["embedded"]
 draft: false
 ---
 

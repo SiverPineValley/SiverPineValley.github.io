@@ -2,7 +2,6 @@
 title: '2-8) 토픽 이름 제약 조건과 유지보수 하기 좋은 토픽 이름 정하기'
 date: 2024-12-07 15:20:00
 category: 'kafka'
-tags: ['kafka']
 draft: false
 ---
 

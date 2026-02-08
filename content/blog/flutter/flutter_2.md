@@ -2,7 +2,6 @@
 title: '[Flutter] 02. 상태 관리 기법과 Provider'
 date: 2024-01-07 21:00:00
 category: 'flutter'
-tags: ['flutter']
 draft: false
 ---
 

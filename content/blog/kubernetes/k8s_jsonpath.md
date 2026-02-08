@@ -2,7 +2,6 @@
 title: '[k8s] Jsonpath'
 date: 2023-08-11 22:00:00
 category: 'kubernetes'
-tags: ['kubernetes']
 draft: false
 ---
 

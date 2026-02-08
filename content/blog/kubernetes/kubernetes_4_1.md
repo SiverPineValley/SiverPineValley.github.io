@@ -2,7 +2,6 @@
 title: '[쿠버네티스 완벽 가이드] 04. API 리소스와 kubectl (1)'
 date: 2022-07-25 23:00:00
 category: 'kubernetes'
-tags: ['kubernetes']
 draft: false
 ---
 

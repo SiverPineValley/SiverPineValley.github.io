@@ -2,7 +2,6 @@
 title: '6-3) 컨슈머 랙'
 date: 2024-01-11 17:30:00
 category: 'kafka'
-tags: ['kafka']
 draft: false
 ---
 

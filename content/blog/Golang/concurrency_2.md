@@ -2,7 +2,6 @@
 title: '[Go 언어 문법 정리] 04. 병행 처리 (2) 저수준 제어'
 date: 2022-04-16 19:16:22
 category: 'Golang'
-tags: ['golang']
 draft: false
 ---
 

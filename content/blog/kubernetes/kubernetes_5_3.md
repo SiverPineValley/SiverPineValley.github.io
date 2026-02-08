@@ -2,7 +2,6 @@
 title: '[쿠버네티스 완벽 가이드] 09. 워크로드 API 카테고리 (3) - 디플로이먼트'
 date: 2022-08-28 13:30:00
 category: 'kubernetes'
-tags: ['kubernetes']
 draft: false
 ---
 

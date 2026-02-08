@@ -2,7 +2,6 @@
 title: '3-3) Saas형 Apache Kafka 장점과 단점'
 date: 2024-12-07 16:30:00
 category: 'kafka'
-tags: ['kafka']
 draft: false
 ---
 

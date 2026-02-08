@@ -2,7 +2,6 @@
 title: '[Go 동시성 프로그래밍] 01. 동시성 소개, 코드 모델링: 순차적인 프로세스 간의 통신'
 date: 2022-07-02 16:10:23
 category: 'Golang'
-tags: ['golang']
 draft: false
 ---
 

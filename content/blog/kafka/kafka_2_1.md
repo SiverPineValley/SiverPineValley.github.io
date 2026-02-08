@@ -2,7 +2,6 @@
 title: '2-1) 오픈 소스 Apache Kafka 생태계'
 date: 2024-12-07 14:00:00
 category: 'kafka'
-tags: ['kafka']
 draft: false
 ---
 

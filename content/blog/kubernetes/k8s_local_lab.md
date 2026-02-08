@@ -2,7 +2,6 @@
 title: '[k8s] Vagrant + VirtualBox + Kubeadm으로 Local Lab 환경 구축'
 date: 2023-08-21 20:30:00
 category: 'kubernetes'
-tags: ['kubernetes']
 draft: false
 ---
 

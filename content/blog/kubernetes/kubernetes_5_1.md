@@ -2,7 +2,6 @@
 title: '[쿠버네티스 완벽 가이드] 07. 워크로드 API 카테고리 (1) - 파드(Pod)'
 date: 2022-08-13 18:00:00
 category: 'kubernetes'
-tags: ['kubernetes']
 draft: false
 ---
 

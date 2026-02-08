@@ -2,7 +2,6 @@
 title: '2-7) 레코드'
 date: 2024-12-07 15:10:00
 category: 'kafka'
-tags: ['kafka']
 draft: false
 ---
 

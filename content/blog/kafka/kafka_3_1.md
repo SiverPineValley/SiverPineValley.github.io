@@ -2,7 +2,6 @@
 title: '3-1) Kafka 클러스터를 운영하는 여러 가지 방법'
 date: 2024-12-07 16:00:00
 category: 'kafka'
-tags: ['kafka']
 draft: false
 ---
 

@@ -2,7 +2,6 @@
 title: '[Cert] 인증서 파일 확장자 설명'
 date: 2022-07-30 14:30:00
 category: 'cert'
-tags: ["cert"]
 draft: false
 ---
 

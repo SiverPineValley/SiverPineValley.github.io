@@ -1,114 +1,84 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import React, { useEffect } from 'react'
+import { graphql } from 'gatsby'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Utterances from '../components/Utterances'
+import * as Elements from '../components/elements'
+import { Layout } from '../layout'
+import { Head } from '../components/head'
+import { PostTitle } from '../components/post-title'
+import { PostDate } from '../components/post-date'
+import { PostContainer } from '../components/post-container'
+import { SocialShare } from '../components/social-share'
+import { SponsorButton } from '../components/sponsor-button'
+import { Bio } from '../components/bio'
+import { PostNavigator } from '../components/post-navigator'
+import { Disqus } from '../components/disqus'
+import { Utterances } from '../components/utterances'
+import * as ScrollManager from '../utils/scroll'
 
-const BlogPostTemplate = ({
-  data: { previous, next, site, markdownRemark: post },
-  location,
-}) => {
-  const siteTitle = site.siteMetadata?.title || `Title`
+import '../styles/code.scss'
+import 'katex/dist/katex.min.css'
+
+export default ({ data, pageContext, location }) => {
+  useEffect(() => {
+    ScrollManager.init()
+    return () => ScrollManager.destroy()
+  }, [])
+
+  const post = data.markdownRemark
+  const metaData = data.site.siteMetadata
+  const { title, comment, siteUrl, author, sponsor } = metaData
+  const { disqusShortName, utterances } = comment
+  const { title: postTitle, date } = post.frontmatter
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
+    <Layout location={location} title={title}>
+      <Head title={postTitle} description={post.excerpt} />
+      <PostTitle title={postTitle} />
+      <PostDate date={date} />
+      <PostContainer html={post.html} />
+      <SocialShare title={postTitle} author={author} />
+      {!!sponsor.buyMeACoffeeId && (
+        <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
+      )}
+      <Elements.Hr />
+      <Bio />
+      <PostNavigator pageContext={pageContext} />
+      {!!disqusShortName && (
+        <Disqus
+          post={post}
+          shortName={disqusShortName}
+          siteUrl={siteUrl}
+          slug={pageContext.slug}
         />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
-      </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-        <Utterances />
-      </nav>
+      )}
+      {!!utterances && <Utterances repo={utterances} />}
     </Layout>
   )
 }
 
-export const Head = ({ data: { markdownRemark: post } }) => {
-  return (
-    <Seo
-      title={post.frontmatter.title}
-      description={post.frontmatter.description || post.excerpt}
-    />
-  )
-}
-
-export default BlogPostTemplate
-
 export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $id: String!
-    $previousPostId: String
-    $nextPostId: String
-  ) {
+  query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
+        author
+        siteUrl
+        comment {
+          disqusShortName
+          utterances
+        }
+        sponsor {
+          buyMeACoffeeId
+        }
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt(pruneLength: 280)
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
-      }
-    }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
-    }
-    next: markdownRemark(id: { eq: $nextPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
       }
     }
   }

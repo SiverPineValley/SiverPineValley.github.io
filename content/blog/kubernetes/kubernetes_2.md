@@ -2,7 +2,6 @@
 title: '[쿠버네티스 완벽 가이드] 02. 쿠버네티스 소개'
 date: 2022-07-19 17:00:00
 category: 'kubernetes'
-tags: ['kubernetes']
 draft: false
 ---
 

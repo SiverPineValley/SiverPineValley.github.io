@@ -2,7 +2,6 @@
 title: '[쿠버네티스 완벽 가이드] 16. 컨피그 & 스토리지 API 카테고리 (2) - 볼륨 (Volume)'
 date: 2024-02-05 11:00:00
 category: 'kubernetes'
-tags: ['kubernetes']
 draft: false
 ---
 
