@@ -1,6 +1,6 @@
 ---
 title: '5-2) 프로듀서 애플리케이션 개발'
-date: 2024-01-11 15:30:00
+date: 2025-01-11 15:30:00
 category: 'kafka'
 draft: false
 ---
