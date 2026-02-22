@@ -1,7 +1,7 @@
 ---
 title: '[프로그래머스 연습문제] 해시'
 date: 2021-10-04 20:06:22
-category: '코테'
+category: 'Algorithm'
 draft: false
 ---
 

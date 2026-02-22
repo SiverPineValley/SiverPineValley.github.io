@@ -1,7 +1,7 @@
 ---
 title: '[프로그래머스 연습문제] Dynamic Programming'
 date: 2022-06-11 16:00:22
-category: '코테'
+category: 'Algorithm'
 draft: false
 ---
 

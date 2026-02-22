@@ -1,7 +1,7 @@
 ---
 title: '[프로그래머스 연습문제] 스택, 큐'
 date: 2022-07-02 14:22:22
-category: '코테'
+category: 'Algorithm'
 draft: false
 ---
 
